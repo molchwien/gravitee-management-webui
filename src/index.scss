@@ -352,6 +352,24 @@ md-list-item::before {
   }
 }
 
+.api-box-icon {
+  height: 50px;
+  &.api-box-icon-figure {
+    width: 150px;
+  }
+  img {
+    display: block;
+    max-width: 150px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+  }
+  &.default {
+    background: url('assets/GRAVITEE_LOGOsstxtclair-05.png') no-repeat center center;
+    background-size: auto 100%;
+  }
+}
+
 .apis-box {
   a, a:link, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -374,23 +392,6 @@ md-list-item::before {
     }
     .api-box-description {
       text-align: center;
-    }
-    .api-box-icon {
-      height: 80px;
-      &.api-box-icon-figure {
-        width: 150px;
-      }
-      img {
-        display: block;
-        max-width: 150px;
-        max-height: 80px;
-        width: auto;
-        height: auto;
-      }
-      &.default {
-        background: url('assets/GRAVITEE_LOGOsstxtclair-05.png') no-repeat center center;
-        background-size: auto 100%;
-      }
     }
     .api-box-name-version {
       font-size: 14px;
