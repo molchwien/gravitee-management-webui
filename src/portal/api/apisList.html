@@ -35,7 +35,7 @@
       </h5>
       <md-content ng-show="!apisCtrl.hideApis" layout="column">
         <div layout="row" layout-wrap>
-          <md-card class="api-box gravitee-card gravitee-api-card" ng-repeat="api in apisCtrl.apis | filter:$ctrl.apiFilter track by api.id"
+          <md-card class="gravitee-api-card" ng-repeat="api in apisCtrl.apis | filter:$ctrl.apiFilter track by api.id"
                    ui-sref="portal.api.detail.general({apiId: api.id})" flex="45">
             <md-card-title style="padding-top: 15px; padding-bottom: 0px;">
               <md-card-title-text>
