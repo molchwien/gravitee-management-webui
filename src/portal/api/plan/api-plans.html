@@ -22,7 +22,7 @@
   ng-if="$ctrl.plans && $ctrl.plans.length">
   <h2 class="section-title" translate="api.plan.title">Plans</h2>
   <div class="pricing-container">
-    <div class="pricing-list">
+    <div class="pricing-list" layout="row" layout-wrap layout-align="center center">
       <div ng-repeat="plan in $ctrl.plans">
         <ul class="pricing-wrapper">
           <li class="is-visible gravitee-card">
