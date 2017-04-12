@@ -30,7 +30,7 @@ import { PortalApisController } from './api/apis.controller';
 
 // API
 import ApiComponent from './api/home/api.component';
-import ApiHeaderComponent from './api/home/api-header.component';
+import ApiHeaderComponent from './api/header/api-header.component';
 import ApiHomepageComponent from './api/home/api-homepage.component';
 import ApiPlansComponent from './api/plan/api-plans.component';
 import ApiSubscribeComponent from './api/subscribe/api-subscribe.component';

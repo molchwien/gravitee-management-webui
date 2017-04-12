@@ -34,8 +34,7 @@ class ApiPoliciesController {
     private $scope,
     private dragularService,
     private $q,
-    private $rootScope,
-    private $timeout
+    private $rootScope
   ) {
     'ngInject';
     this.apiPoliciesByPath = {};
@@ -323,12 +322,10 @@ class ApiPoliciesController {
     });
 
     return this.ApiService.update(this.$scope.$parent.apiCtrl.api).then( ( {data} ) => {
+      this.$scope.$parent.apiCtrl.api = data;
+      this.$rootScope.$broadcast('apiChangeSuccess');
       this.NotificationService.show('API \'' + this.$scope.$parent.apiCtrl.api.name + '\' saved');
-      this.$timeout(function () {
-        this.$scope.$parent.apiCtrl.api = data;
-        this.$rootScope.$broadcast('apiChangeSuccess');
-        this.pathsToCompare = this.generatePathsToCompare();
-      });
+      this.pathsToCompare = this.generatePathsToCompare();
     });
   }
 

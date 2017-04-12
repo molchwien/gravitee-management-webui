@@ -38,8 +38,9 @@
         </p>
       </div>
       <div class="api-actions" layout="row">
-        <md-button class="md-raised" ui-sref="portal.api.detail.general({apiId: $ctrl.api.id})">{{'api.plan.subscribe' | translate}}</md-button>
         <md-button class="md-raised" ui-sref="portal.api.pages({apiId: $ctrl.api.id})">{{'api.documentation.title' | translate}}</md-button>
+        <md-button class="md-raised md-primary" style="margin: 6px 0; background-color: #006CAB"
+                   ui-sref="portal.api.detail.general({apiId: $ctrl.api.id})">{{'api.plan.subscribe' | translate}}</md-button>
       </div>
     </div>
     <div class="api-logo">
